@@ -1,0 +1,30 @@
+<div class="app-container">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Exercises</h2>
+    <ul>
+      <li (click)="selectExercise('app-test-form')" [class.active]="selectedExercise === 'app-test-form'">
+        Convert Numbers to Word (Exercise 1)
+      </li>
+      <li (click)="selectExercise('exercise2')" [class.active]="selectedExercise === 'exercise2'">
+        Check If Number is Palindrome (Exercise2)
+      </li>
+      <li (click)="selectExercise('exercise3')" [class.active]="selectedExercise === 'exercise3'">
+        Convert to Spiral (Exercise3)
+      </li>
+    </ul>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <div *ngIf="selectedExercise === 'app-test-form'">
+      <app-test-form></app-test-form>
+    </div>
+    <div *ngIf="selectedExercise === 'exercise2'">
+      <app-exercise2></app-exercise2>
+    </div>
+    <div *ngIf="selectedExercise === 'exercise3'">
+      <app-exercise3></app-exercise3>
+    </div>
+  </div>
+</div>

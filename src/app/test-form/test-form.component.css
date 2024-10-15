@@ -1,0 +1,92 @@
+/* Main container for the converter */
+.converter-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  text-align: center; /* Center text */
+}
+
+/* Title styling */
+.converter-container h2 {
+  color: #007bff; /* Primary color */
+  font-size: 28px; /* Slightly larger text */
+  font-weight: bold; /* Emphasized title */
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.converter-form {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+}
+
+/* Label for the input field */
+.converter-form label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: left; /* Left align for better readability */
+}
+
+/* Input field styling */
+.converter-form input.form-control {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ced4da; /* Grey border */
+  border-radius: 8px; /* Rounded input field */
+  outline: none;
+  transition: all 0.3s ease; /* Smooth transition for focus */
+}
+
+.converter-form input.form-control:focus {
+  border-color: #007bff; /* Border turns blue on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+/* Submit button styling */
+.converter-form button.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.converter-form button.btn-primary:disabled {
+  background-color: #6c757d; /* Grey background when disabled */
+  cursor: not-allowed; /* Disabled cursor */
+}
+
+.converter-form button.btn-primary:hover:not(:disabled) {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Result section styling */
+.result-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e9f7ef; /* Soft green background */
+  border-radius: 8px;
+  border: 1px solid #28a745; /* Green border */
+}
+
+.result-section h3 {
+  color: #28a745; /* Success color */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.result-section .result-text {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}

@@ -1,0 +1,24 @@
+<div class="palindrome-container">
+    <h2>🔢 Palindrome Number Checker</h2>
+  
+    <form [formGroup]="palindromeForm" (ngSubmit)="checkPalindrome()" class="palindrome-form">
+      <div class="form-group">
+        <label for="number">Enter Number:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="number"
+          formControlName="number"
+          placeholder="Enter a positive number"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="palindromeForm.invalid">
+        Check Palindrome
+      </button>
+    </form>
+  
+    <div *ngIf="result" class="result-section">
+      <p class="result-text">{{ result }}</p>
+    </div>
+  </div>
+  

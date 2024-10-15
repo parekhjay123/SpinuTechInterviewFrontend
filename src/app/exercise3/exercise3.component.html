@@ -1,0 +1,20 @@
+<div class="spiral-container">
+    <h2>🔢 Spiral Number Generator</h2>
+    <form [formGroup]="userForm" (ngSubmit)="generateSpiral()" class="converter-form">
+        <div class="form-group">
+            <label for="number">Enter an Integer:</label>
+            <input type="number" formControlName="number" class="form-control" placeholder="Enter a positive number" />
+        </div>
+        <button [disabled]="userForm.invalid" class="btn btn-primary">Generate Spiral</button>
+    </form>
+    <div class="spiral-result" *ngIf="spiralMatrix.length > 0">
+        <table class="table table-bordered">
+          <tbody>
+            <tr *ngFor="let row of spiralMatrix">
+              <td *ngFor="let cell of row">{{ cell }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  

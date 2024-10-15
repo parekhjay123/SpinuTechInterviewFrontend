@@ -1,0 +1,17 @@
+<div class="converter-container">
+    <h2>💸 Amount to Words Converter</h2>
+  
+    <form [formGroup]="userForm" (ngSubmit)="convertAmount()" class="converter-form">
+      <div class="form-group">
+        <label for="amount">Enter Amount:</label>
+        <input type="number" class="form-control" id="amount" formControlName="amount" placeholder="Enter amount" />
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="userForm.invalid">Convert</button>
+    </form>
+  
+    <div *ngIf="userForm.valid" class="result-section">
+      <h3>Converted Amount:</h3>
+      <p class="result-text">{{ result }}</p>
+    </div>
+  </div>
+  
