@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class ExercisesService {
 
-  private apiUrl = 'http://localhost:5101/home/exercise1'; // Update with your API URL
-  private apiex3 = 'http://localhost:5101/home/exercise3'; // Update with your API URL
+  private apiUrl = 'https://spinutechinterviewjayparekh-api-b3h2fya0dnhxcrdw.centralus-01.azurewebsites.net/home/exercise1'; // Update with your API URL
+  private apiex3 = 'https://spinutechinterviewjayparekh-api-b3h2fya0dnhxcrdw.centralus-01.azurewebsites.net/home/exercise3'; // Update with your API URL
 
   constructor(private http: HttpClient) { }
 
